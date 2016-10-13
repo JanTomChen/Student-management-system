@@ -2,6 +2,17 @@ const express = require('express');
 const Student = require('../mongoose.js');
 const router = express.Router();
 
+
+router.post("/remove", function (req, res) {
+    Student.findByIdAndRemove(req.body.id, function (err) {
+        if (err) {
+            res.json({ code: 'error', message: '系统错误' })
+        }
+        else {
+            res.json({ code: 'success', message: '成功！' })
+        }
+    })
+});
 router.get('/',function(req,res){
 
     Student.find()

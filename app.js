@@ -16,6 +16,10 @@ app.set('view engine', 'html');
 
 app.use('/',require('./routes/index.js'));
 
+app.use("/api", require("./routes/api/remove.js"));
+
+
+
 app.listen(3000,function(){
     console.log('Server is running...please visited http://localhost:3000/')
 })
