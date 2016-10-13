@@ -1,0 +1,28 @@
+{
+  "name": "students",
+  "version": "1.0.0",
+  "description": "学生管理系统",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanTomChen/Student-management-system.git"
+  },
+  "keywords": [
+    "student",
+    "information"
+  ],
+  "author": "陈俊良 何文礼 吴汉泽 颜俊华 熊楠宇 吴智霖",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanTomChen/Student-management-system/issues"
+  },
+  "homepage": "https://github.com/JanTomChen/Student-management-system#readme",
+  "dependencies": {
+    "art-template": "^3.0.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
