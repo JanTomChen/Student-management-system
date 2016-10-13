@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>学生管理系统 - 首页</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    测试
+    <header>
+        <div>
+            <p>学生管理系统</p>
+        </div>
+    </header>
+    <main>
+        <input type="button" value="添加">
+        <input type="button" value="个人信息">
+        <input type="button" value="查询成绩">
+        <table border="1" cellpadding="5" width="100%">
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>手机</th>
+                <th>邮箱</th>
+            </tr>
+            {{each students as s}}
+            <tr>
+                <td>{{s.sName}}</td>
+                <td>{{s.sAge}}</td>
+                <td>{{s.sSex}}</td>
+                <td>{{s.sPhone}}</td>
+                <td>{{s.sEmail}}</td>
+            </tr>
+            {{/each}}
+            
+        </table>
+    </main>
 </body>
 </html>
